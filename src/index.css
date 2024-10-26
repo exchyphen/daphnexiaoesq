@@ -1,0 +1,28 @@
+:root {
+    /* colors */
+    --black: #000000;
+    --brown: #7E5920;
+    --dark-green: #04773B;
+    --light-green: #9FD356;
+    --light: #EDF4ED;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+
+    /* base font */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}

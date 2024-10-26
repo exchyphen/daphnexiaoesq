@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    background: var(--black);
+    color: var(--light);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__nav-block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.copyright a, .footer__other-links a {
+    text-decoration: underline;
+}
+
+.footer__other-links {
+    justify-content: center;
+    gap: 2rem
+}

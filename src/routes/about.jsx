@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
-export default function About() {
+const About = () => {
   return (
     <>
+      <Nav></Nav>
       <div>about page</div>
-      <Link to={"/"}>root page</Link>
+      <Footer></Footer>
     </>
   );
-}
+};
+
+export default About;
