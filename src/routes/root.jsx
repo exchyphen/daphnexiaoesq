@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./root.css";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -7,13 +6,7 @@ const Root = () => {
   return (
     <div className="home">
       <Nav></Nav>
-      <div className="hero-img-container">
-        <img
-          className="hero-img"
-          src="\src\assets\pexels-pixabay-160994.jpg"
-        ></img>
-      </div>
-      <section className="main-text">
+      <section className="home__main">
         <h2>Sacramento Attorney</h2>
         <div>
           <h3>

@@ -24,7 +24,7 @@ const Footer = (props) => {
           <Link to={"/contact"}>Contact</Link>
         </li>
       </ul>
-      <div>
+      <div className="footer__description">
         Law Office of Daphne Z. Xiao serves clients throughout the greater
         Sacramento, California, area, including Yolo County, Sacramento County,
         and the cities of Sacramento, Citrus Heights, Davis, Elk Grove and

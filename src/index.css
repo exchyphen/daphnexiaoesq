@@ -1,9 +1,8 @@
 :root {
     /* colors */
-    --black: #000000;
-    --brown: #7E5920;
-    --dark-green: #04773B;
-    --light-green: #9FD356;
+    --black: #2F2D2E;
+    --blue: #39A0ED;
+    --light-green: #5FDD9D;
     --light: #EDF4ED;
 }
 
@@ -20,6 +19,7 @@ html {
     font-size: 18px;
     font-weight: 400;
     color: var(--black);
+    line-height: 1.6rem;
 }
 
 #root {

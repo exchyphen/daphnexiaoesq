@@ -5,15 +5,24 @@
     padding: 4rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
 .footer__nav-block {
+    width: 100%;
+    max-width: 1200px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+}
+
+.footer__description {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .copyright a, .footer__other-links a {
