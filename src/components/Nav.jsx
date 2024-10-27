@@ -12,8 +12,8 @@ const Nav = (props) => {
         <div className="nav__title--intro">
           <div>Languages: English | 中文</div>
 
-          <a className="nav__title-block--tel" href="tel:+1-800-590-0356">
-            Toll Free: 800-590-0356
+          <a className="nav__title-block--tel" href="tel:+1-916-453-0356">
+            Call Now: 916-453-0356
           </a>
         </div>
       </div>

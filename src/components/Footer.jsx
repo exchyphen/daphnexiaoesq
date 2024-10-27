@@ -10,7 +10,6 @@ const Footer = (props) => {
           <div>Law Office of Daphne Z. Xiao</div>
           <div>2414 16th Street, Suite 6</div>
           <div>Sacramento, CA, 95818</div>
-          <div>Toll Free: 800-590-0356</div>
           <div>Local: 916-453-0356</div>
         </div>
         <div className="footer__description">
