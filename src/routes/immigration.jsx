@@ -5,7 +5,7 @@ import "./immigration.css";
 const Immigration = (props) => {
   return (
     <div>
-      <Nav></Nav>
+      <Nav tab="immigration"></Nav>
       <div>immigration</div>
       <Footer></Footer>
     </div>

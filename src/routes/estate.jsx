@@ -5,7 +5,7 @@ import "./estate.css";
 const Estate = (props) => {
   return (
     <div>
-      <Nav></Nav>
+      <Nav tab="estate"></Nav>
       <div>Estate</div>
       <Footer></Footer>
     </div>

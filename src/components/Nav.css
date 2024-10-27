@@ -88,3 +88,11 @@ a:hover {
     height: 100%;
     object-fit: cover;
 }
+
+.nav__highlight {
+    color: var(--light-green);
+}
+
+.nav__highlight:visited {
+    color: var(--light-green);
+}

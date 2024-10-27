@@ -5,7 +5,7 @@ import "./family-law.css";
 const FamilyLaw = (props) => {
   return (
     <div>
-      <Nav></Nav>
+      <Nav tab="family"></Nav>
       <div>Family law</div>
       <Footer></Footer>
     </div>

@@ -19,22 +19,52 @@ const Nav = (props) => {
       </div>
       <ul className="nav__navbar">
         <li>
-          <Link to={"/"}>Home</Link>
+          <Link
+            className={props.tab === "home" ? "nav__highlight" : ""}
+            to={"/"}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to={"/about"}>About</Link>
+          <Link
+            className={props.tab === "about" ? "nav__highlight" : ""}
+            to={"/about"}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link to={"/family-law"}>Family Law</Link>
+          <Link
+            className={props.tab === "family" ? "nav__highlight" : ""}
+            to={"/family-law"}
+          >
+            Family Law
+          </Link>
         </li>
         <li>
-          <Link to={"/estate"}>Estate Planning & Probate</Link>
+          <Link
+            className={props.tab === "estate" ? "nav__highlight" : ""}
+            to={"/estate"}
+          >
+            Estate Planning & Probate
+          </Link>
         </li>
         <li>
-          <Link to={"/immigration"}>Immigration & Naturalization</Link>
+          <Link
+            className={props.tab === "immigration" ? "nav__highlight" : ""}
+            to={"/immigration"}
+          >
+            Immigration & Naturalization
+          </Link>
         </li>
         <li>
-          <Link to={"/contact"}>Contact</Link>
+          <Link
+            className={props.tab === "contact" ? "nav__highlight" : ""}
+            to={"/contact"}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="nav__hero">

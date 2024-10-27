@@ -5,7 +5,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <Nav></Nav>
+      <Nav tab="contact"></Nav>
       <div>contact page</div>
       <Footer></Footer>
     </>
