@@ -37,14 +37,27 @@ html {
     align-items: center;
 }
 
+.content__main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 3rem;
+}
+
 .text__main {
     width: 100%;
-    max-width: 1000px;
-    margin: 3rem 0;
-    padding: 0 4rem;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.text__main--solo {
+    padding: 0 4rem;
+    margin: 3rem 0;
 }
 
 .text__main--section {
@@ -64,4 +77,14 @@ html {
 
 .text__bold {
     font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .content__main {
+        
+    }
 }

@@ -7,7 +7,7 @@ const Sitemap = (props) => {
   return (
     <div className="page">
       <Nav></Nav>
-      <section className="text__main">
+      <section className="text__main text__main--solo">
         <h2>Site Map</h2>
         <div className="text__main--section">
           <ul>

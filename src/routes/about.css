@@ -1,0 +1,10 @@
+.about__profile-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list__no-style {
+    list-style: none;
+}

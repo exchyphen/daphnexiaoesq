@@ -7,7 +7,7 @@ const Disclaimer = (props) => {
   return (
     <div className="page">
       <Nav></Nav>
-      <section className="text__main">
+      <section className="text__main text__main--solo">
         <div className="text__main--section">
           <h2>Disclaimer</h2>
           <p>

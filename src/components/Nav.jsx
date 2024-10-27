@@ -67,12 +67,6 @@ const Nav = (props) => {
           </Link>
         </li>
       </ul>
-      <div className="nav__hero">
-        <img
-          className="nav__hero--img"
-          src="\src\assets\pexels-pixabay-160994.jpg"
-        ></img>
-      </div>
     </div>
   );
 };
