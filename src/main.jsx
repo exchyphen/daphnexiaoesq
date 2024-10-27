@@ -14,6 +14,8 @@ import Immigration from "./routes/immigration";
 import Disclaimer from "./routes/disclaimer";
 import Privacy from "./routes/privacy";
 import Sitemap from "./routes/sitemap";
+import Divorce from "./routes/divorce";
+import ChildCustody from "./routes/childCustody";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,16 @@ const router = createBrowserRouter([
   {
     path: "family-law",
     element: <FamilyLaw />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "family-law/divorce",
+    element: <Divorce />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "family-law/child-custody",
+    element: <ChildCustody />,
     errorElement: <ErrorPage />,
   },
   {

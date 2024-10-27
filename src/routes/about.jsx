@@ -4,14 +4,14 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="page">
       <Nav tab="about"></Nav>
       <section className="text__main">
         <h2>About Daphne Z. Xiao</h2>
         <div className="text__main--section">
           <p>
-            I earned my B.A. from the University of California — Davis and my
-            law degree from Lincoln Law School in Sacramento.
+            I earned my B.A. from the University of California, Davis and my law
+            degree from Lincoln Law School in Sacramento.
           </p>
           <p>
             I have 10 years of legal experience as a legal assistant and
@@ -45,6 +45,27 @@ const About = () => {
           <p>B.A.S 1994</p>
           <p>Major: Biochemistry</p>
           <p>Major: English</p>
+        </div>
+        <div className="text__main--section">
+          <h3>Professional Associations and Memberships</h3>
+          <p>State Bar, Member, 2008 to Present</p>
+          <p>Sacramento County Bar, Member, 2008 to Present</p>
+        </div>
+        <div className="text__main--section">
+          <h3>Past Employment Positions</h3>
+          <p>Law Office of Donna L. Reed, Legal Assistant, 2004 to 2008</p>
+          <p>Law Office of Donna L. Reed, Attorney/Partner, 2008 to 2010</p>
+        </div>
+        <div className="text__main--section">
+          <h3>Pro Bono Activities</h3>
+          <p>
+            Board member for Newstar Chinese School at Davis, CA, 2010 to 2011
+          </p>
+        </div>
+        <div className="text__main--section">
+          <h3>Languages</h3>
+          <p>English</p>
+          <p>Chinese</p>
         </div>
       </section>
       <Footer></Footer>
