@@ -75,22 +75,6 @@ const Root = () => {
               skillful advocacy and results-oriented representation.
             </p>
           </div>
-          {/* <div className="text__main--section">
-            <h3>Contact A Lawyer</h3>
-            <p>
-              For a consultation about your legal problem, call the Law Office
-              of Daphne Z. Xiao at{" "}
-              <a className="text__link" href="tel:+1-916-453-0356">
-                916-453-0356
-              </a>{" "}
-              or{" "}
-              <Link className="text__link" to={"/contact"}>
-                send an email
-              </Link>
-              . I offer reduced rate initial consultations and free initial
-              consultations in probate matters.
-            </p>
-          </div> */}
         </section>
       </div>
       <Footer></Footer>

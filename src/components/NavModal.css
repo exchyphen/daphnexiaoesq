@@ -1,0 +1,27 @@
+.navmodal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.navmodal__exit {
+    width: 60px;
+    height: 60px;
+    margin: 2rem;
+    font-size: 2rem;
+    border: 1px solid var(--light);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmodal__exit:hover {
+    cursor: pointer;
+    background: var(--light-green);
+}

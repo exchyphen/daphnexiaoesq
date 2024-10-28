@@ -1,12 +1,29 @@
 import "./nav.css";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import { useEffect, useState } from "react";
+import NavModal from "./NavModal";
 
 const Nav = (props) => {
+  const [modalActive, setModalActive] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const mobileBreakpoint = 850;
+
+  useEffect(() => {
+    const resize = () => setWindowSize(window.innerWidth);
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
+
   return (
     <div className="nav">
       <div className="nav__title">
         <Link className="nav__title--title" to={"/"}>
-          <h1>Law Office of Daphne Xiao</h1>
+          {windowSize > mobileBreakpoint ? (
+            <h1>Law Office of Daphne Xiao</h1>
+          ) : (
+            <h2>Law Office of Daphne Xiao</h2>
+          )}
           <p>A Committed Lawyer Who Cares</p>
         </Link>
         <div className="nav__title--intro">
@@ -17,56 +34,20 @@ const Nav = (props) => {
           </a>
         </div>
       </div>
-      <ul className="nav__navbar">
-        <li>
-          <Link
-            className={props.tab === "home" ? "nav__highlight" : ""}
-            to={"/"}
+      <div className="navbar__container">
+        {windowSize > mobileBreakpoint ? (
+          <Navbar tab={props.tab} style="normal"></Navbar>
+        ) : modalActive ? (
+          <NavModal tab={props.tab} setModalActive={setModalActive}></NavModal>
+        ) : (
+          <button
+            className="navmodal__button"
+            onClick={() => setModalActive(!modalActive)}
           >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={props.tab === "about" ? "nav__highlight" : ""}
-            to={"/about"}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={props.tab === "family" ? "nav__highlight" : ""}
-            to={"/family-law"}
-          >
-            Family Law
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={props.tab === "estate" ? "nav__highlight" : ""}
-            to={"/estate"}
-          >
-            Estate Planning & Probate
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={props.tab === "immigration" ? "nav__highlight" : ""}
-            to={"/immigration"}
-          >
-            Immigration & Naturalization
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={props.tab === "contact" ? "nav__highlight" : ""}
-            to={"/contact"}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+            Menu
+          </button>
+        )}
+      </div>
     </div>
   );
 };

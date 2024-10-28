@@ -14,3 +14,24 @@
         max-width: 200px;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .sidebar__contact {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        flex-direction: column;
+    }
+}

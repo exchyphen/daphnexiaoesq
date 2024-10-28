@@ -24,7 +24,7 @@ const Sidebar = (props) => {
           </li>
         </ul>
       </div>
-      <div className="text__main--section">
+      <div className="text__main--section sidebar__contact">
         <h3>Contact Us</h3>
         <p>
           I offer reduced rate initial consultations and free initial

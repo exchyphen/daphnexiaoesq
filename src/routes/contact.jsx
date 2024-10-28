@@ -1,14 +1,18 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Sidebar from "../components/Sidebar";
 import "./contact.css";
 
 const Contact = () => {
   return (
-    <>
+    <div className="page">
       <Nav tab="contact"></Nav>
-      <div>contact page</div>
+      <div className="content__main">
+        <Sidebar></Sidebar>
+        <section className="text__main--section">contact page</section>
+      </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 
