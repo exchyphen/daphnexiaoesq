@@ -116,7 +116,6 @@ a:hover {
 
     padding: 1rem;
     margin-bottom: 1rem;
-    margin-left: 2rem;
 }
 
 .navmodal__button:hover {
@@ -133,12 +132,13 @@ a:hover {
 
 @media screen and (max-width: 850px) {
     .nav__title {
-        padding: 1rem;
         flex-direction: column;
         gap: 1rem;
+        text-align: center;
     }
 
-    .navmodal__button {
-        margin-left: 1rem;
+    .navbar__container {
+        display: flex;
+        justify-content: center;
     }
 }
