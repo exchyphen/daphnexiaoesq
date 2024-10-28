@@ -9,6 +9,8 @@
     margin-left: 2rem;
 }
 
+
+
 @media screen and (max-width: 1024px) {
     .sidebar {
         max-width: 200px;
@@ -34,4 +36,3 @@
     .sidebar {
         flex-direction: column;
     }
-}

@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import "./immigration.css";
-import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 
 const Immigration = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="page">
       <Nav tab="immigration"></Nav>

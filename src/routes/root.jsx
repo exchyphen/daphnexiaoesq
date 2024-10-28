@@ -1,10 +1,14 @@
 import "./root.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 
 const Root = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="page">
       <Nav tab="home"></Nav>

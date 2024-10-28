@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import "./family-law.css";
 import Sidebar from "../components/Sidebar";
 
 const FamilyLaw = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="page">
       <Nav tab="family"></Nav>

@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import "./privacy.css";
 
 const Privacy = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="page">
       <Nav></Nav>

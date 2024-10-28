@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Sidebar from "../components/Sidebar";
 import "./estate.css";
 
 const Estate = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="page">
       <Nav tab="estate"></Nav>
