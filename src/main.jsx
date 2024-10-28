@@ -1,6 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import "./index.css";
 
 // pages
@@ -17,7 +21,7 @@ import Sitemap from "./routes/sitemap";
 import Divorce from "./routes/divorce";
 import ChildCustody from "./routes/childCustody";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,

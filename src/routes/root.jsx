@@ -42,16 +42,14 @@ const Root = () => {
             </p>
           </div>
           <div className="text__main--section">
-            <h3>An Experienced And Committed Lawyer</h3>
+            <h3>An Experienced Lawyer and a Strong Advocate</h3>
             <p>
               When you come to my office in Sacramento to discuss your legal
               matter, you can expect:
             </p>
             <p>
-              <span className="text__bold">
-                My complete commitment to your case
-              </span>{" "}
-              — I am a strong advocate who will work hard to achieve your goals.
+              <span className="text__bold">Strong Advocate</span> — I am a
+              strong advocate who will work hard to achieve your goals.
             </p>
             <p>
               <span className="text__bold">

@@ -94,6 +94,8 @@ a:hover {
 
 .navbar__container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .navmodal__button {
@@ -135,10 +137,5 @@ a:hover {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
-    }
-
-    .navbar__container {
-        display: flex;
-        justify-content: center;
     }
 }

@@ -109,7 +109,7 @@ const About = () => {
                 Law Office of Donna L. Reed, Legal Assistant, 2004 to 2008
               </li>
               <li>
-                Law Office of Donna L. Reed, Attorney/liartner, 2008 to 2010
+                Law Office of Donna L. Reed, Attorney/partner, 2008 to 2010
               </li>
             </ul>
           </div>
