@@ -4,6 +4,10 @@
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\Exception;
 
+	require '/home/daphnexi/public_html/PHPMailer-6.9.2/src/Exception.php';
+	require '/home/daphnexi/public_html/PHPMailer-6.9.2/src/PHPMailer.php';
+	require '/home/daphnexi/public_html/PHPMailer-6.9.2/src/SMTP.php';
+
 	// instance
 	$mail = new PHPMailer(true);
 	
@@ -27,7 +31,7 @@
 		//Recipients
 		$mail->setFrom('albert@daphnexiaoesq.com', 'Mailer');
 		$mail->addAddress($to, 'Albert');     //Add a recipient
-		$mail->addReplyTo($from, 'Sender'); // --- experimental
+		//$mail->addReplyTo($from, 'Sender'); // --- experimental
 
 		//Attachments
 		//$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -36,8 +40,8 @@
 		//Content
 		$mail->isHTML(true);                                  //Set email format to HTML
 		$mail->Subject = $subject;
-		$mail->Body    = 'testing body';
-		$mail->AltBody = 'testing alt body';
+		$mail->Body    = 'testing body ' . $from;
+		$mail->AltBody = 'testing alt body ' . $from;
 
 		$mail->send();
 		echo 'Message has been sent';
