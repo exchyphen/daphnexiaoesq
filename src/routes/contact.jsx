@@ -91,6 +91,7 @@ const Contact = () => {
       <div className="content__main">
         <Sidebar></Sidebar>
         <section className="text__main--section">
+          <h2>Contact</h2>
           {contactSuccess ? (
             <div>Thank you for contacting me, I will be in touch shortly.</div>
           ) : (
