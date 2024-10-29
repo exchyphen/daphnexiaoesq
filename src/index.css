@@ -4,6 +4,7 @@
     --blue: #39A0ED;
     --light-green: #5FDD9D;
     --light: #EDF4ED;
+    --red: red;
 }
 
 *, *::before, *::after {
