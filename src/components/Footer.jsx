@@ -5,10 +5,9 @@ const Footer = (props) => {
   return (
     <footer className="footer">
       <div className="footer__description">
-        Law Office of Daphne Z. Xiao serves clients throughout the greater
-        Sacramento, California, area, including Yolo County, Sacramento County,
-        and the cities of Sacramento, Citrus Heights, Davis, Elk Grove and
-        Folsom.
+        {props.language === "English"
+          ? "Law Office of Daphne Z. Xiao serves clients throughout the greater Sacramento, California, area, including Yolo County, Sacramento County, and the cities of Sacramento, Citrus Heights, Davis, Elk Grove and Folsom."
+          : "Daphne Z. Xiao 律師事務所為加州大薩克拉門托地區的客戶提供服務，包括約洛縣、薩克拉門托縣以及薩克拉門托市、Citrus Heights、戴維斯市、埃爾克格羅夫市和福爾瑟姆市。"}
       </div>
       <div className="footer__contact">
         <a
@@ -31,17 +30,23 @@ const Footer = (props) => {
           >
             Law Office of Daphne Z. Xiao
           </a>{" "}
-          • All Rights Reserved
+          • {props.language === "English" ? "All Rights Reserved" : "版權所有"}
         </div>
         <ul className="footer__nav-block footer__other-links">
           <li>
-            <Link to={"/disclaimer"}>Disclaimer</Link>
+            <Link to={"/disclaimer"} state={{ language: props.language }}>
+              {props.language === "English" ? "Disclaimer" : "免責聲明"}
+            </Link>
           </li>
           <li>
-            <Link to="/sitemap">Site Map</Link>
+            <Link to={"/sitemap"} state={{ language: props.language }}>
+              {props.language === "English" ? "Site Map" : "網站地圖"}
+            </Link>
           </li>
           <li>
-            <Link to="/privacy">Privacy Policy</Link>
+            <Link to={"/privacy"} state={{ language: props.language }}>
+              {props.language === "English" ? "Privacy Policy" : "隱私權政策"}
+            </Link>
           </li>
         </ul>
       </div>

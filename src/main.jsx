@@ -21,6 +21,10 @@ import Sitemap from "./routes/sitemap";
 import Divorce from "./routes/divorce";
 import ChildCustody from "./routes/childCustody";
 
+const userRedirect = () => {
+  console.log("redirecting");
+};
+
 const router = createHashRouter([
   {
     path: "/",
@@ -76,6 +80,11 @@ const router = createHashRouter([
     path: "privacy",
     element: <Privacy />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "*",
+    element: <Root />,
+    onEnter: { userRedirect },
   },
 ]);
 

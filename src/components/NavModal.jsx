@@ -10,7 +10,11 @@ const NavModal = (props) => {
       >
         X
       </div>
-      <Navbar tab={props.tab} style={"modal"}></Navbar>
+      <Navbar
+        tab={props.tab}
+        style={"modal"}
+        language={props.language}
+      ></Navbar>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import axios from "axios";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
@@ -6,6 +7,13 @@ import Sidebar from "../components/Sidebar";
 import "./contact.css";
 
 const Contact = () => {
+  const location = useLocation();
+
+  const language =
+    location.state && location.state.language
+      ? location.state.language
+      : "English";
+
   // states
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState(false);
@@ -87,17 +95,23 @@ const Contact = () => {
   }, []);
   return (
     <div className="page">
-      <Nav tab="contact"></Nav>
+      <Nav tab="contact" language={language}></Nav>
       <div className="content__main">
-        <Sidebar></Sidebar>
+        <Sidebar language={language}></Sidebar>
         <section className="text__main--section">
-          <h2>Contact</h2>
+          <h2>{language === "English" ? `Contact` : `接觸`}</h2>
           {contactSuccess ? (
-            <div>Thank you for contacting me, I will be in touch shortly.</div>
+            <div>
+              {language === "English"
+                ? `Thank you for contacting me, I will be in touch shortly.`
+                : `感謝您與我聯繫，我會盡快與您聯繫。`}
+            </div>
           ) : (
             <form className="contact__form" onSubmit={handleSubmit}>
               <div>
-                <label className={nameError ? "label--error" : ""}>Name</label>
+                <label className={nameError ? "label--error" : ""}>
+                  {language === "English" ? `Name` : `姓名`}
+                </label>
                 <input
                   className={
                     "contact__input" +
@@ -105,14 +119,19 @@ const Contact = () => {
                   }
                   type="text"
                   onChange={(e) => setName(e.target.value)}
+                  placeholder={`John Doe`}
                 ></input>
                 {nameError ? (
-                  <p className="contact__error">Please enter your name.</p>
+                  <p className="contact__error">
+                    {language === "English"
+                      ? `Please enter your name.`
+                      : `請輸入您的姓名。`}
+                  </p>
                 ) : null}
               </div>
               <div>
                 <label className={emailError ? "label--error" : ""}>
-                  Email
+                  {language === "English" ? `Email` : `電子郵件`}
                 </label>
                 <input
                   className={
@@ -121,14 +140,19 @@ const Contact = () => {
                   }
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
+                  placeholder={`example@email.com`}
                 ></input>
                 {emailError ? (
-                  <p className="contact__error">Please enter a valid email.</p>
+                  <p className="contact__error">
+                    {language === "English"
+                      ? `Please enter a valid email.`
+                      : `請輸入有效的電子郵件。`}
+                  </p>
                 ) : null}
               </div>
               <div>
                 <label className={phoneNumberError ? "label--error" : ""}>
-                  Phone
+                  {language === "English" ? `Phone` : `電話`}
                 </label>
                 <input
                   className={
@@ -136,16 +160,19 @@ const Contact = () => {
                     (phoneNumberError ? " contact__input--error" : "")
                   }
                   onChange={(e) => setPhoneNumber(e.target.value)}
+                  placeholder={`0123456789`}
                 ></input>
                 {phoneNumberError ? (
                   <p className="contact__error">
-                    Please a valid phone number (only numbers).
+                    {language === "English"
+                      ? `Please a valid phone number (only numbers).`
+                      : `請提供有效的電話號碼（僅限數字）。`}
                   </p>
                 ) : null}
               </div>
               <div>
                 <div className={messageError ? "label--error" : ""}>
-                  Message
+                  {language === "English" ? `Message` : `訊息`}
                 </div>
                 <textarea
                   className={
@@ -154,9 +181,14 @@ const Contact = () => {
                   }
                   type="text"
                   onChange={(e) => setMessage(e.target.value)}
+                  placeholder={`Some message.`}
                 ></textarea>
                 {messageError ? (
-                  <p className="contact__error">Please provide a message.</p>
+                  <p className="contact__error">
+                    {language === "English"
+                      ? `Please provide a message.`
+                      : `請留言。`}
+                  </p>
                 ) : null}
               </div>
               <button
@@ -164,13 +196,13 @@ const Contact = () => {
                 type="submit"
                 onClick={handleSubmit}
               >
-                Submit
+                {language === "English" ? `Submit` : `提交`}
               </button>
             </form>
           )}
         </section>
       </div>
-      <Footer></Footer>
+      <Footer language={language}></Footer>
     </div>
   );
 };
