@@ -13,7 +13,7 @@ const Nav = (props) => {
   const languageIndex = language === "English" ? 0 : 1;
 
   // language switch arrays
-  const navTitle = ["Law Office of Daphne Xiao", "肖達芙律師事務所"];
+  const navTitle = ["Law Office of Daphne Xiao", "蕭澤瑗律師事務所"];
 
   useEffect(() => {
     const resize = () => setWindowSize(window.innerWidth);
@@ -33,7 +33,7 @@ const Nav = (props) => {
           <p>
             {language === "English"
               ? "A Committed Lawyer Who Cares"
-              : "一位盡職盡責、關懷備至的律師"}
+              : "一位盡責和富有同理心的律師"}
           </p>
         </div>
         <div className="nav__title--intro">

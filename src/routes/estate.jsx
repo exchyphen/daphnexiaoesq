@@ -25,13 +25,13 @@ const Estate = (props) => {
           <h2>
             {language === "English"
               ? `Sacramento Estate Planning Attorney`
-              : `薩克拉門托遺產規劃律師`}
+              : `遺產規劃和遺囑認證`}
           </h2>
           <div className="text__main--section">
             <h3>
               {language === "English"
                 ? `Experience You Can Depend On`
-                : `您可以信賴的經驗`}
+                : `值得信賴的經驗`}
             </h3>
             <p>
               {language === "English"
@@ -40,7 +40,8 @@ const Estate = (props) => {
               possibility of family strife. An estate plan can give you peace of
               mind and the satisfaction of knowing that you have taken care of
               your family.`
-                : `遺產規劃和支持文件可以實現許多目標。遺產規劃可以保護您的資產。它可以減少家庭紛爭的可能性。遺產規劃可以讓您安心並滿足於知道您已經照顧好您的家人。`}
+                : `遺產規劃及相關文件可以實現多項目標。透過遺產規劃，您不但可以保護資
+                  產，也可以減少家庭糾紛，讓您可以放心家人將得到妥善安排和照顧。`}
             </p>
             <p>
               {language === "English"
@@ -48,7 +49,9 @@ const Estate = (props) => {
               probate lawyer. I help people make sound estate planning
               decisions, and provide efficient probate and estate administration
               services. I can assist you with these estate law matters:`
-                : `我叫 Daphne Z. Xiao，一位經驗豐富的遺產規劃和遺囑認證律師。我幫助人們做出合理的遺產規劃決策，並提供高效率的遺囑認證和遺產管理服務。我可以協助您處理以下遺產法事宜：`}
+                : `我是蕭澤瑗律師，一位經驗豐富的遺產規劃與遺囑認證律師。我協助客戶做
+                出明智的遺產規劃決策，並提供高效的遺囑認證及遺產管理服務。我可以在
+                以下遺產法律事務中為您提供協助：`}
             </p>
             <ul>
               <li>{language === "English" ? `Wills` : `遺囑`}</li>
@@ -60,14 +63,15 @@ const Estate = (props) => {
               <li>
                 {language === "English"
                   ? `Advance health care directives`
-                  : `預先醫療照護指示`}
+                  : `醫護事宜預立醫囑`}
               </li>
               <li>
                 {language === "English"
                   ? `Living trusts and other types of trusts`
                   : `生前信託及其他類型的信託`}
               </li>
-              <li>{language === "English" ? `Guardianships` : `監護權`}</li>
+              <li>{language === "English" ? `Guardianship` : `監護權`}</li>
+              <li>{language === "English" ? `Conservatorship` : `保護監管`}</li>
               <li>
                 {language === "English"
                   ? `Probate administration`
@@ -76,7 +80,7 @@ const Estate = (props) => {
               <li>
                 {language === "English"
                   ? `Other estate law matters`
-                  : `其他遺產法事宜`}
+                  : `其他遺產法律事務`}
               </li>
             </ul>
           </div>
@@ -84,7 +88,7 @@ const Estate = (props) => {
             <h3>
               {language === "English"
                 ? `Developing A Customized Estate Plan`
-                : `制定客製化的遺產計劃`}
+                : `量身定做遺產計劃`}
             </h3>
             <p>
               {language === "English"
@@ -97,41 +101,46 @@ const Estate = (props) => {
               marriage, the birth of a child or divorce, should cause you to
               revisit your estate plan. As the need arises, I can draft new
               documents for a reasonable fee.`
-                : `當您來到我位於薩克拉門託的辦公室討論您的需求時，我會仔細聆聽您描述您的情況、您的家庭和您的目標。根據這些因素，我將起草旨在幫助您實現這些目標的遺產文件。這至少應包括遺囑、授權書和預立醫療保健指示。您生活中的重大事件，例如結婚、孩子的出生或離婚，應該會促使您重新審視您的遺產規劃。當需要時，我可以以合理的費用起草新文件。`}
+                : `當您前來我位於沙加緬度的辦公室商討需求時，我會仔細傾聽您描述您的家
+                庭、現況及目標。我會根據這些因素，擬訂能夠幫助您實現目標的遺產文件
+                。基本上，我會為您提供包括遺囑、授權書及醫療指示書的方案。不同的人
+                生大事中，例如結婚、生子或離婚，都應促使您重新檢視您的遺產計劃，我
+                可以根據您不同的需要起草新文件，並收取合理的費用。`}
             </p>
           </div>
           <div className="text__main--section">
             <h3>
               {language === "English"
                 ? `Probate And Estate Administration Services`
-                : `遺囑認證和遺產管理服務`}
+                : `遺囑認證及遺產管理服務`}
             </h3>
             <p>
               {language === "English"
                 ? `Wrapping up the affairs of an estate can be a complex undertaking.
               At my law firm, I provide cost-effective probate administration
               services. I can:`
-                : `結束遺產事務可能是一項複雜的任務。在我的律師事務所，我提供具成本效益的遺囑認證管理服務。我可以：`}
+                : `處理遺產相關的事務可能是一項艱辛的任務。在我的律師事務所，我提供符
+              合成本效益的遺囑認證管理服務。我可以：`}
             </p>
             <ul>
               <li>
                 {language === "English"
                   ? `Advise the personal representative (executor) of his or her
                 duties`
-                  : `告知個人代表（遺囑執行人）其職責`}
+                  : `向遺產管理人（執行人）提供其職責的建議`}
               </li>
               <li>
                 {language === "English"
                   ? `Obtain the Letters Testamentary or Letters of Administration
                 that empower the personal representative to conduct the probate
                 or estate administration process`
-                  : `取得遺囑書或遺產管理書，授權個人代表進行遺囑認證或遺產管理程序`}
+                  : `取得授權書，以便遺產管理人能夠執行遺囑認證或遺產管理程序`}
               </li>
               <li>
                 {language === "English"
                   ? `Assist the personal representative in identifying estate assets
                 and debts`
-                  : `協助個人代表識別遺產資產和債務`}
+                  : `協助遺產管理人識別遺產資產與債務`}
               </li>
               <li>
                 {language === "English"
@@ -144,7 +153,8 @@ const Estate = (props) => {
                 ? `My goal will be to help the personal representative avoid problems
               and delays so that the estate’s assets can be distributed to
               beneficiaries and heirs as quickly as possible.`
-                : `我的目標是幫助個人代表避免問題和延誤，以便將遺產資產盡快分配給受益人和繼承人。`}
+                : `我的目標是協助遺產管理人避免問題和延誤，盡可能迅速地將遺產資產分配
+              給受益人和繼承人。`}
             </p>
           </div>
         </section>

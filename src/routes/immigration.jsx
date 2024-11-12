@@ -25,13 +25,13 @@ const Immigration = (props) => {
           <h2>
             {language === "English"
               ? `Sacramento Immigration Attorney`
-              : `薩克拉門托移民律師`}
+              : `沙加緬度移民律師`}
           </h2>
           <div className="text__main--section">
             <h3>
               {language === "English"
                 ? `Efficient And Cost-Effective Immigration Law Services`
-                : `高效率且具成本效益的移民法律服務`}
+                : `高效且具成本效益的移民法律服務`}
             </h3>
             <p>
               {language === "English"
@@ -42,7 +42,10 @@ const Immigration = (props) => {
               starting point and resulting in further delays. The services of an
               experienced immigration attorney can help you avoid problems and
               expedite your visa application.`
-                : `嘗試獲得簽證或調整您的移民身份可能既耗時又令人沮喪。如果您在簽證申請中犯了錯誤或未能提供所需信息，您的簽證申請可能會被退回，從而使您返回出發地並導致進一步的延誤。經驗豐富的移民律師的服務可以幫助您避免問題並加快您的簽證申請。`}
+                : `申請簽證或調整移民身份的過程，漫長又令人沮喪。若您在申請簽證期間出
+                錯，或未提供所需資訊，您的簽證申請可能會被退回，導致要重新開始，並
+                延誤進度。經驗豐富的移民律師可以幫助您避免問題，並加快簽證申請的進
+                度。`}
             </p>
             <p>
               {language === "English" ? `I am` : `我是`}{" "}
@@ -59,12 +62,14 @@ const Immigration = (props) => {
               representation on behalf of people seeking legal residency in the
               U.S. I work hard to achieve my clients’ goals in an efficient,
               timely and cost-effective manner.`
-                : `薩克拉門託的一名律師，為尋求美國合法居留權的人士提供以結果為導向的代理服務。`}
+                : `我是在沙加緬度執業的蕭澤瑗律師，一位為尋求美國合法居留的客戶提供結
+                果導向的律師。我致力於以高效、及時且具成本效益的方式幫助客戶實現目
+                標。`}
             </p>
             <p>
               {language === "English"
                 ? `My law firm assists people in immigration matters involving:`
-                : `我的律師事務所協助人們處理移民事務，涉及：`}
+                : `我的律師事務所提供以下移民事務服務：`}
             </p>
             <ul>
               <li>{language === "English" ? `Family visas` : `家庭簽證`}</li>
@@ -72,25 +77,25 @@ const Immigration = (props) => {
                 <li>
                   {language === "English"
                     ? `Fiancé and fiancée visa (K-1 visa)`
-                    : `未婚夫及未婚妻簽證（K-1 簽證）`}
+                    : `未婚夫/妻簽證（K-1簽證）`}
                 </li>
                 <li>
                   {language === "English"
                     ? `Form I-130 petition for alien family member`
-                    : `外籍家屬 I-130 表格申請`}
+                    : `I-130外籍親屬移民申請`}
                 </li>
               </ul>
             </ul>
             <ul>
               <li>
-                {language === "English" ? `Employment-based visas` : `就業簽證`}
+                {language === "English" ? `Employment-based visas` : `工作簽證`}
               </li>
               <ul>
-                <li>{language === "English" ? `H-1B visa` : `H-1B 簽證`}</li>
+                <li>{language === "English" ? `H-1B visa` : `H-1B簽證`}</li>
                 <li>
                   {language === "English"
                     ? `International executives (L-1A visa)`
-                    : `國際高階主管（L-1A簽證）`}
+                    : `國際高管（L-1A簽證）`}
                 </li>
                 <li>
                   {language === "English"
@@ -100,13 +105,13 @@ const Immigration = (props) => {
                 <li>
                   {language === "English"
                     ? `Persons of extraordinary ability (O-1 visa)`
-                    : `傑出人才（O-1簽證）`}
+                    : `具備傑出才能人士（O-1簽證）`}
                 </li>
               </ul>
             </ul>
             <ul>
               <li>
-                {language === "English" ? `Investor visas` : `投資者簽證`}
+                {language === "English" ? `Investor visas` : `投資人簽證`}
               </li>
               <ul>
                 <li>
@@ -117,24 +122,24 @@ const Immigration = (props) => {
                 <li>
                   {language === "English"
                     ? `Investor visa (E-2 visa)`
-                    : `投資者簽證（E-2簽證）`}
+                    : `投資人簽證（E-2簽證）`}
                 </li>
               </ul>
             </ul>
             <ul>
               <li>{language === "English" ? `Green Cards` : `綠卡`}</li>
               <li>
-                {language === "English" ? `Adjustment of status` : `狀態調整`}
+                {language === "English" ? `Adjustment of status` : `身份調整`}
               </li>
               <li>
                 {language === "English"
                   ? `U.S. citizenship and naturalization`
-                  : `美國公民身份和入籍`}
+                  : `美國公民及入籍`}
               </li>
               <li>
                 {language === "English"
                   ? `Other immigration matters`
-                  : `其他移民事宜`}
+                  : `其他移民事務`}
               </li>
             </ul>
           </div>
@@ -142,7 +147,7 @@ const Immigration = (props) => {
             <h3>
               {language === "English"
                 ? `Doing Things Right The First Time`
-                : `第一次就把事情做好`}
+                : `從一開始就做好準備`}
             </h3>
             <p>
               {language === "English"
@@ -154,7 +159,11 @@ const Immigration = (props) => {
               those problems. As the process moves forward, I will keep you
               informed of important developments and respond promptly when you
               call.`
-                : `簽證申請獲得批准的關鍵是收集美國公民及移民服務局所需的資訊。當我處理您的案件時，我會注意第一時間把事情做好，以免延誤。我還將審查您的情況是否有潛在問題，並採取措施解決這些問題。隨著流程的進展，我將隨時向您通報重要進展，並在您致電時及時回覆。`}
+                : `成功獲得簽證批准的關鍵在於收集美國公民與移民服務局所要求的完整資訊
+                。當我代理您的案件時，我將以嚴謹的態度從一開始就確保文件準確無誤，
+                以避免延誤。我還會審查您的情況，以排查潛在問題，並儘早採取措施解決
+                問題。在過程中，我將隨時通知您重要進展，並在您需要時及時回覆您的詢
+                問。`}
             </p>
           </div>
         </section>

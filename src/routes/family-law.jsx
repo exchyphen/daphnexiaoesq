@@ -25,13 +25,13 @@ const FamilyLaw = (props) => {
           <h2>
             {language === "English"
               ? `Sacramento Family Law Attorney`
-              : `薩克拉門托家庭律師`}
+              : `家庭法`}
           </h2>
           <div className="text__main--section">
             <h3>
               {language === "English"
                 ? `Protecting Your Rights, Achieving Your Goals`
-                : `保護您的權利，實現您的目標`}
+                : `保護您的權益，實現您的目標`}
             </h3>
             <p>
               {language === "English"
@@ -39,7 +39,9 @@ const FamilyLaw = (props) => {
               resolved, you will not be able to move forward in your life. That
               is why it is important to retain the services of an experienced
               family law attorney.`
-                : `家庭法問題會在許多方面影響您的生活。在問題解決之前，你的生活將無法前進。這就是為什麼保留經驗豐富的家庭法律律師的服務很重要。`}
+                : `家庭法律問題會對您的生活產生多方面的影響。在問題解決之前，您都受到
+                  掣肘，難以開展新的一章。因此，聘請一位具備豐富經驗的家庭法律師至關
+                  重要。`}
             </p>
             <p>
               {language === "English"
@@ -47,12 +49,14 @@ const FamilyLaw = (props) => {
               clients achieve positive outcomes in family law matters. I work
               hard to guide people through the divorce process in an efficient
               and timely manner while protecting their rights at all times.`
-                : `我是 Daphne Z. Xiao，律師，致力於幫助我的客戶在家庭法事務上取得積極成果。我努力指導人們有效率、及時地完成離婚程序，同時始終保護他們的權利。`}
+                : `我是蕭澤瑗律師，一位致力於協助客戶在家庭法律事務中取得正面成果的律
+                  師。我竭力以高效且迅速的方式，協助客戶完成離婚程序，同時悍衛他們的
+                  權益。`}
             </p>
             <p>
               {language === "English"
                 ? `My law firm can assist you in family law matters involving:`
-                : `我的律師事務所可以協助您處理家事法事務，涉及：`}
+                : `我的律師事務所可協助處理以下家庭法律事務：`}
             </p>
             <ul>
               <li>
@@ -72,34 +76,34 @@ const FamilyLaw = (props) => {
                 >
                   {language === "English"
                     ? `Child custody and visitation`
-                    : `兒童監護權和探視權`}
+                    : `子女監護權與探視權`}
                 </Link>
               </li>
-              <li>{language === "English" ? `Child support` : `子女扶養費`}</li>
+              <li>{language === "English" ? `Child support` : `子女撫養費`}</li>
               <li>
                 {language === "English"
                   ? `Spousal support (alimony)`
-                  : `配偶贍養費（贍養費）`}
+                  : `配偶贍養費`}
               </li>
               <li>
                 {language === "English"
                   ? `Division of community property and debts`
-                  : `共同財產和債務的分割`}
+                  : `共同財產與債務的分割`}
               </li>
               <li>
                 {language === "English"
                   ? `Modifications in family law orders`
-                  : `家庭法命令的修改`}
+                  : `家庭法令的修改`}
               </li>
               <li>
                 {language === "English"
                   ? `Paternity and issues facing unmarried parents`
-                  : `親子關係和未婚父母面臨的問題`}
+                  : `親子關係確認及未婚父母面臨的問題`}
               </li>
               <li>
                 {language === "English"
                   ? `Other family law matters`
-                  : `其他家庭法事宜`}
+                  : `其他家庭法律事務`}
               </li>
             </ul>
           </div>
@@ -107,7 +111,7 @@ const FamilyLaw = (props) => {
             <h3>
               {language === "English"
                 ? `Negotiation Versus Litigation`
-                : `談判與訴訟`}
+                : `談判與訴訟的抉擇`}
             </h3>
             <p>
               {language === "English"
@@ -117,21 +121,24 @@ const FamilyLaw = (props) => {
               not a judge. I have successfully negotiated positive outcomes for
               many clients, and I will use my skills seeking the best possible
               result for you.`
-                : `只要有可能，我相信透過談判為我的客戶尋求結果。協商解決方案可以滿足雙方的需求。它還讓您可以控制結果，而不是法官。我已經成功地為許多客戶爭取了積極的結果，我將利用我的技能為您尋求最好的結果。`}
+                : `只要情況許可，我傾向透過談判為客戶尋求解決方案。透過談判協議，不僅
+                  可滿足雙方需求，還讓您掌控結果，而非將決策權交給法官。我已成功為許
+                  多客戶談判達成積極成果，我會發揮所長，為您爭取最佳的結果。`}
             </p>
             <p>
               {language === "English"
                 ? `However, there are times when litigation is necessary. In these
               cases, I vigorously represent my clients in court, working hard to
               protect their rights and achieve their goals.`
-                : `然而，有時也需要提起訴訟。在這些案件中，我在法庭上積極代表我的客戶，努力保護他們的權利並實現他們的目標。`}
+                : `然而，訴訟有時也是無可避免的。在這些情況下，我將積極地在法庭上為我
+                的客戶辯護，致力於保護其權益並達成其目標。`}
             </p>
           </div>
           <div className="text__main--section">
             <h3>
               {language === "English"
                 ? `Sacramento Child Support Lawyer`
-                : `薩克拉門托兒童撫養律師`}
+                : `沙加緬度子女撫養費律師`}
             </h3>
             <p>
               {language === "English"
@@ -142,7 +149,10 @@ const FamilyLaw = (props) => {
               extensive experience in all aspects of child support. Whether you
               must pay child support or are entitled to receive it, I will work
               diligently to achieve a fair child support level for you.`
-                : `在加州，子女扶養費的金額受法定準則管轄。父母的收入、孩子的數量、孩子與父母雙方一起度過的過夜次數等因素都會影響子女扶養費水準。我在子女撫養的各個方面都有豐富的經驗。無論您必須支付子女撫養費還是有權獲得子女撫養費，我都會努力為您實現公平的子女撫養費水平。`}
+                : `在加州，子女撫養費的數目是由法定標準決定。父母收入、子女人數，以及
+                  子女與每位父母同住的過夜天數等因素，都會影響撫養費多寡。我在處理子
+                  女撫養費方面積累了豐富的經驗。無論您是需支付撫養費的一方，還是有權
+                  獲得撫養費的一方，我都將全力為您爭取合理的撫養費。`}
             </p>
             <p>
               {language === "English"
@@ -150,7 +160,8 @@ const FamilyLaw = (props) => {
               represent you in court seeking a child support modification. In
               routine cases, I can obtain a modification for a reasonable and
               affordable fee.`
-                : `如果情況發生重大變化，我可以代表您出庭尋求子女扶養費修改。在常規情況下，我可以以合理且負擔得起的費用獲得修改。`}
+                : `如果您的生活面對重大變化，我可以在法庭上為您申請撫養費調整。在一般
+                  常規的案件中，我收取合理且可負擔的服務費用。`}
             </p>
           </div>
         </section>

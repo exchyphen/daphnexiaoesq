@@ -10,7 +10,7 @@ const Navbar = (props) => {
           to={"/"}
           state={{ language: props.language }}
         >
-          {props.language === "English" ? "Home" : "家"}
+          {props.language === "English" ? "Home" : "首頁"}
         </Link>
       </li>
       <li>
@@ -59,7 +59,7 @@ const Navbar = (props) => {
           to={"/contact"}
           state={{ language: props.language }}
         >
-          {props.language === "English" ? "Contact" : "接觸"}
+          {props.language === "English" ? "Contact" : "聯絡方法"}
         </Link>
       </li>
     </ul>

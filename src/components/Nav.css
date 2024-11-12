@@ -43,11 +43,6 @@ a:hover {
     justify-content: space-between;
 }
 
-/* .nav__title--title:hover {
-    cursor: pointer;
-    color: var(--light-green);
-} */
-
 .nav__title--intro {
     width: auto;
     height: 100%;

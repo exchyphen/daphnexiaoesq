@@ -8,6 +8,10 @@ import Sidebar from "../components/Sidebar";
 const About = (props) => {
   const location = useLocation();
 
+  const handleYearsOfExp = () => {
+    return new Date().getFullYear() - 2008;
+  };
+
   const language =
     location.state && location.state.language
       ? location.state.language
@@ -23,7 +27,7 @@ const About = (props) => {
       <div className="content__main">
         <Sidebar language={language}></Sidebar>
         <section className="text__main">
-          <h2>Daphne Z. Xiao</h2>
+          <h2>{language === "English" ? `Daphne Z. Xiao` : `蕭澤瑗`}</h2>
           <div className="text__main--section about__profile-container">
             <div className="text__main--section">
               <p>
@@ -32,7 +36,9 @@ const About = (props) => {
               <div>
                 <h4>{language === "English" ? "Location" : "地點"}</h4>
                 <p>
-                  {language === "English" ? `Sacramento, CA` : `加州薩克拉門托`}
+                  {language === "English"
+                    ? `Sacramento, CA`
+                    : `沙加緬度，加利福尼亞州`}
                 </p>
               </div>
               <div>
@@ -61,28 +67,30 @@ const About = (props) => {
               {language === "English"
                 ? `I earned my B.A. from the University of California, Davis and my
               law degree from Lincoln Law School in Sacramento.`
-                : `我在加州大學戴維斯分校獲得學士學位，並在薩克拉門託林肯法學院獲得法學學位。`}
+                : `我畢業於加州大學戴維斯分校，並於沙加緬度的林肯法學院取得法學學位。`}
             </p>
             <p>
               {language === "English"
-                ? `I have 10 years of legal experience as a legal assistant and
-              attorney. Having worked in a small law firm while going to law
+                ? `I have been practicing for ${handleYearsOfExp()} years. Having worked in a small law firm while going to law
               school, I saw the value of working one-on-one with clients. This
               enables the attorney to learn about each client’s concerns and
               goals — and to respond with solutions tailored to the client’s
               needs.`
-                : `我作為法律助理和律師擁有 10 年的法律經驗。在就讀法學院期間，我曾在一家小型律師事務所工作過，因此我看到了與客戶一對一工作的價值。這使律師能夠了解每個客戶的擔憂和目標，並根據客戶的需求量身定制解決方案。`}
+                : `我已從事法律工作${handleYearsOfExp()}年。於法律學院期間，我曾在一間小型律師事務所工作
+              ，使我深刻體會到與客戶一對一服務的價值。這種工作方式讓律師能夠深入
+              了解每位客戶的關注與目標，並提供針對客戶需求的專屬解決方案。`}
             </p>
             <p>
               {language === "English"
                 ? `You can depend on the Law Office of Daphne Z. Xiao at all times
               for compassionate advice, responsive service and vigorous
               representation.`
-                : `您可以隨時信賴肖志律師事務所的富有同情心的建議、積極響應的服務和積極的代理。`}
+                : `您可以隨時依賴蕭澤瑗律師事務所，享有富有同理心的建議、迅速回應的服
+                  務，以及積極的代理。`}
             </p>
           </div>
           <div className="text__main--section">
-            <h3>{language === "English" ? `Areas of Practice` : `實踐領域`}</h3>
+            <h3>{language === "English" ? `Areas of Practice` : `業務範疇`}</h3>
             <ul>
               <li>
                 <Link
@@ -101,7 +109,7 @@ const About = (props) => {
                 >
                   {language === "English"
                     ? `Estate Planning & Probate`
-                    : `遺產規劃和遺囑認證`}
+                    : `遺產規劃與遺囑認證`}
                 </Link>
               </li>
               <li>
@@ -110,13 +118,13 @@ const About = (props) => {
                   to={"/immigration"}
                   state={{ language: language }}
                 >
-                  {language === "English" ? `Immigration` : `移民`}
+                  {language === "English" ? `Immigration` : `移民法`}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="text__main--section">
-            <h3>{language === "English" ? `Education` : `教育`}</h3>
+            <h3>{language === "English" ? `Education` : `學歷`}</h3>
             <ul>
               <li>
                 <span className="text__bold">
@@ -125,9 +133,13 @@ const About = (props) => {
                 {", "}
                 {language === "English"
                   ? `Sacramento, California`
-                  : `加州薩克拉門托`}
+                  : `沙加緬度，加利福尼亞州`}
                 <ul className="list__no-style">
-                  <li>J.D. - 2000</li>
+                  <li>
+                    {language === "English"
+                      ? `J.D. - 2000`
+                      : `法學博士 (J.D.) - 2000年`}
+                  </li>
                 </ul>
               </li>
               <li>
@@ -135,18 +147,22 @@ const About = (props) => {
                   {language === "English" ? `UC Davis` : `加州大學戴維斯分校`}
                 </span>
                 {", "}
-                {language === "English" ? `Davis, California` : `加州戴維斯`}
+                {language === "English"
+                  ? `Davis, California`
+                  : `加利福尼亞州戴維斯市`}
                 <ul className="list__no-style">
                   <li>
-                    {language === "English" ? `B.A.S 1994` : `會計學士 1994`}
+                    {language === "English"
+                      ? `B.A.S 1994`
+                      : `學士學位 - 1994年`}
                   </li>
                   <li>
                     {language === "English"
                       ? `Major: Biochemistry`
-                      : `專業：生物化學`}
+                      : `主修：生物化學`}
                   </li>
                   <li>
-                    {language === "English" ? `Major: English` : `專業：英語`}
+                    {language === "English" ? `Major: English` : `主修：英文`}
                   </li>
                 </ul>
               </li>
@@ -156,18 +172,18 @@ const About = (props) => {
             <h3>
               {language === "English"
                 ? `Professional Associations and Memberships`
-                : `專業協會和會員資格`}
+                : `專業協會與會員資格`}
             </h3>
             <ul>
               <li>
                 {language === "English"
                   ? `State Bar, Member, 2008 to Present`
-                  : `州律師協會會員，2008 年至今`}
+                  : `州律師協會，會員，2008年至今`}
               </li>
               <li>
                 {language === "English"
                   ? `Sacramento County Bar, Member, 2008 to Present`
-                  : `薩克拉門託縣律師協會，會員，2008 年至今`}
+                  : `沙加緬度郡律師協會，會員，2008年至今`}
               </li>
             </ul>
           </div>
@@ -175,18 +191,18 @@ const About = (props) => {
             <h3>
               {language === "English"
                 ? `Past Employment Positions`
-                : `過去的就業職位`}
+                : `過去職位`}
             </h3>
             <ul>
               <li>
                 {language === "English"
                   ? `Law Office of Donna L. Reed, Legal Assistant, 2004 to 2008`
-                  : `Donna L. Reed 律師事務所，法律助理，2004 年至 2008 年`}
+                  : `Donna L. Reed律師事務所，法律助理，2004年至2008年`}
               </li>
               <li>
                 {language === "English"
                   ? `Law Office of Donna L. Reed, Attorney/partner, 2008 to 2010`
-                  : `Donna L. Reed 律師事務所，律師/合夥人，2008 年至 2010 年`}
+                  : `Donna L. Reed律師事務所，律師/合夥人，2008年至2010年`}
               </li>
             </ul>
           </div>
@@ -199,15 +215,16 @@ const About = (props) => {
                 {language === "English"
                   ? `Board member for Newstar Chinese School at Davis, CA, 2010 to
                 2011`
-                  : `2010年至2011年，加州戴維斯市新星中文學校董事會成員`}
+                  : `擔任戴維斯市新星中文學校董事會成員，2010年至2011年`}
               </li>
             </ul>
           </div>
           <div className="text__main--section">
-            <h3>{language === "English" ? `Languages` : `語言`}</h3>
+            <h3>{language === "English" ? `Languages` : `語言能力`}</h3>
             <ul>
               <li>{language === "Engliish" ? `English` : `英語`}</li>
-              <li>{language === "English" ? `Chinese` : `中文`}</li>
+              <li>{language === "English" ? `Chinese` : `廣東話`}</li>
+              {language === "English" ? null : <li>{`普通話`}</li>}
             </ul>
           </div>
         </section>

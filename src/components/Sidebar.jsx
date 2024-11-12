@@ -6,7 +6,7 @@ const Sidebar = (props) => {
     <div className="sidebar">
       <div className="text__main--section">
         <h3>
-          {props.language === "English" ? "Areas of Practice" : "實踐領域"}
+          {props.language === "English" ? "Areas of Practice" : "業務範疇"}
         </h3>
         <ul>
           <li>
@@ -18,12 +18,12 @@ const Sidebar = (props) => {
             <Link className="text__link" to={"/estate"}>
               {props.language === "English"
                 ? "Estate Planning & Probate"
-                : "遺產規劃和遺囑認證"}
+                : "遺產規劃與遺囑認證"}
             </Link>
           </li>
           <li>
             <Link className="text__link" to={"/immigration"}>
-              {props.language === "English" ? "Immigration" : "移民"}
+              {props.language === "English" ? "Immigration" : "移民法"}
             </Link>
           </li>
         </ul>
@@ -33,7 +33,7 @@ const Sidebar = (props) => {
         <p>
           {props.language === "English"
             ? "I offer reduced rate initial consultations and free initial consultations in probate matters."
-            : "我在遺囑認證事宜上提供優惠的初次諮詢和免費的初次諮詢。"}
+            : "我提供首次諮詢優惠，和免費的初次遺囑認證事務諮詢。"}
         </p>
         <div className="text__main--section">
           <a
@@ -41,7 +41,7 @@ const Sidebar = (props) => {
             href="https://maps.app.goo.gl/2Bj1Bt6qGdAAarGPA"
             target="_blank"
           >
-            <h4>{props.language === "English" ? "Office" : "辦公室"}</h4>
+            <h4>{props.language === "English" ? "Office" : "事務所地址"}</h4>
             <div>Law Office of Daphne Z. Xiao</div>
             <div>2414 16th Street, Suite 6</div>
             <div>Sacramento, CA, 95818</div>
