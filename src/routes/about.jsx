@@ -222,7 +222,7 @@ const About = (props) => {
           <div className="text__main--section">
             <h3>{language === "English" ? `Languages` : `語言能力`}</h3>
             <ul>
-              <li>{language === "Engliish" ? `English` : `英語`}</li>
+              <li>{language === "English" ? `English` : `英語`}</li>
               <li>{language === "English" ? `Chinese` : `廣東話`}</li>
               {language === "English" ? null : <li>{`普通話`}</li>}
             </ul>
